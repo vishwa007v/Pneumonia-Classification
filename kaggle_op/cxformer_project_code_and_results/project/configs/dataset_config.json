@@ -1,0 +1,25 @@
+{
+  "dataset_paths": {
+    "local_windows": "data/chest img data/chest_xray",
+    "kaggle_environment": "/kaggle/input/chest-xray-pneumonia/chest_xray"
+  },
+  "prepared_dataset_paths": {
+    "local_windows": "data/prepared",
+    "kaggle_environment": "/kaggle/working/prepared"
+  },
+  "splits": ["train", "val", "test"],
+  "classes": ["NORMAL", "PNEUMONIA"],
+  "supported_extensions": [".jpeg", ".jpg", ".png"],
+  "preparation": {
+    "val_ratio": 0.15,
+    "random_seed": 42,
+    "stratify_by": "sub_etiology",
+    "manifest_output_dir": "reports/manifests",
+    "preparation_report_json": "reports/dataset_preparation_report.json",
+    "preparation_report_md": "reports/dataset_preparation_report.md"
+  },
+  "reports": {
+    "output_dir": "reports",
+    "report_filename": "dataset_audit_report.json"
+  }
+}

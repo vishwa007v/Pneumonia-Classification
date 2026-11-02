@@ -1,0 +1,5 @@
+case,test_index,true_label,predicted_label,p_pneumonia,image_path
+True Normal,0,0,0,0.3141923248767853,/kaggle/working/cxformer_gradcam_recovered/true_normal_gradcam.png
+True Pneumonia,231,1,1,0.9920403361320496,/kaggle/working/cxformer_gradcam_recovered/true_pneumonia_gradcam.png
+False Positive,3,0,1,0.5344937443733215,/kaggle/working/cxformer_gradcam_recovered/false_positive_gradcam.png
+False Negative,386,1,0,0.03508961200714111,/kaggle/working/cxformer_gradcam_recovered/false_negative_gradcam.png

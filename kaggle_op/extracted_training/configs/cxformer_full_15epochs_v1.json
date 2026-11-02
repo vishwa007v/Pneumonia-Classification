@@ -1,0 +1,41 @@
+{
+    "reproducibility": {
+        "random_seed": 42,
+        "deterministic_cudnn": true
+    },
+    "hardware": {
+        "num_workers_windows": 0,
+        "num_workers_linux": 2,
+        "pin_memory_auto": true
+    },
+    "dataset": {
+        "prepared_root_local": "data/prepared",
+        "prepared_root_kaggle": "/kaggle/working/prepared",
+        "image_size": 224,
+        "classes": [
+            "NORMAL",
+            "PNEUMONIA"
+        ]
+    },
+    "models": {
+        "cxformer_small": {
+            "architecture": "cxformer_small",
+            "model_dir": "CXformer_small_files",
+            "image_size": 518,
+            "num_classes": 2,
+            "dropout_rate": 0.3,
+            "freeze_backbone": true,
+            "learning_rate": 0.001,
+            "weight_decay": 0.01,
+            "batch_size": 8,
+            "epochs": 15,
+            "optimizer": "adamw",
+            "lr_scheduler": "plateau",
+            "monitor_metric": "val_loss",
+            "monitor_mode": "min"
+        }
+    },
+    "checkpoints": {
+        "output_dir": "cxformer_small_full_training_15epochs_v1/checkpoints"
+    }
+}

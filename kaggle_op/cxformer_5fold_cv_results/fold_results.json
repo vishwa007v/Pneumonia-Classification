@@ -1,0 +1,41 @@
+[
+  {
+    "fold": 1,
+    "best_epoch": 13,
+    "accuracy": 0.9798,
+    "precision": 0.9883,
+    "recall": 0.9845,
+    "specificity": 0.9667,
+    "f1": 0.9738,
+    "auc": 0.9962,
+    "val_loss": 0.0634,
+    "train_samples": 4164,
+    "val_samples": 1042
+  },
+  {
+    "fold": 2,
+    "best_epoch": 3,
+    "accuracy": 0.9616,
+    "precision": 0.9728,
+    "recall": 0.9754,
+    "specificity": 0.9222,
+    "f1": 0.9499,
+    "auc": 0.9933,
+    "val_loss": 0.0889,
+    "train_samples": 4165,
+    "val_samples": 1041
+  },
+  {
+    "fold": 3,
+    "best_epoch": 15,
+    "accuracy": 0.9712,
+    "precision": 0.9947,
+    "recall": 0.9663,
+    "specificity": 0.9852,
+    "f1": 0.9634,
+    "auc": 0.9984,
+    "val_loss": 0.0619,
+    "train_samples": 4165,
+    "val_samples": 1041
+  }
+]

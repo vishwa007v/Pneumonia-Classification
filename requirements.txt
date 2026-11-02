@@ -1,0 +1,10 @@
+# Core requirements for dataset auditing, training, and metrics
+torch>=2.0.0
+Pillow>=9.0.0
+numpy>=1.20.0
+scikit-learn>=1.2.0
+
+# Optional cloud/accelerator dependencies (pre-installed on Kaggle; local fallback operates without them)
+# torchvision>=0.15.0  # Optional: ResNet18 and transforms include native PyTorch fallbacks
+# matplotlib>=3.7.0   # For subsequent Grad-CAM and metric visualization
+# tqdm>=4.65.0

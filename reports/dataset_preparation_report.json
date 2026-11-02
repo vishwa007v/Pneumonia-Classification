@@ -1,0 +1,112 @@
+{
+  "pipeline_timestamp": "2026-10-10 23:23:54",
+  "random_seed": 42,
+  "val_ratio": 0.15,
+  "source_directory": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray",
+  "prepared_directory": "E:\\Project1\\gpu-network\\data\\prepared",
+  "total_source_files_scanned": 5856,
+  "total_files_retained": 5824,
+  "total_files_excluded": 32,
+  "original_counts": {
+    "train": {
+      "TOTAL": 5216,
+      "NORMAL": 1341,
+      "PNEUMONIA": 3875,
+      "PNEUMONIA_BACTERIA": 2530,
+      "PNEUMONIA_VIRUS": 1345
+    },
+    "val": {
+      "TOTAL": 16,
+      "NORMAL": 8,
+      "PNEUMONIA": 8,
+      "PNEUMONIA_BACTERIA": 8,
+      "PNEUMONIA_VIRUS": 0
+    },
+    "test": {
+      "TOTAL": 624,
+      "NORMAL": 234,
+      "PNEUMONIA": 390,
+      "PNEUMONIA_BACTERIA": 242,
+      "PNEUMONIA_VIRUS": 148
+    }
+  },
+  "prepared_counts": {
+    "train": {
+      "TOTAL": 4411,
+      "NORMAL": 1139,
+      "PNEUMONIA": 3272,
+      "PNEUMONIA_BACTERIA": 2135,
+      "PNEUMONIA_VIRUS": 1137
+    },
+    "val": {
+      "TOTAL": 795,
+      "NORMAL": 209,
+      "PNEUMONIA": 586,
+      "PNEUMONIA_BACTERIA": 385,
+      "PNEUMONIA_VIRUS": 201
+    },
+    "test": {
+      "TOTAL": 618,
+      "NORMAL": 231,
+      "PNEUMONIA": 387,
+      "PNEUMONIA_BACTERIA": 240,
+      "PNEUMONIA_VIRUS": 147
+    }
+  },
+  "exclusions_by_reason": {
+    "EXCLUDED_EXACT_DUPLICATE": 32
+  },
+  "deduplication_summary": {
+    "train_exact_duplicates_excluded": 26,
+    "test_exact_duplicates_excluded": 6,
+    "val_candidates_evaluated": 16,
+    "val_candidates_included": 16,
+    "val_candidates_excluded": 0
+  },
+  "original_val_candidates_outcome": {
+    "evaluated": 16,
+    "included": 16,
+    "excluded": 0,
+    "exclusion_details": {}
+  },
+  "cross_split_hash_overlap": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  },
+  "perceptual_hash_screening": {
+    "status": "COMPLETED",
+    "algorithm": "256-bit Difference Hash (dHash 16x16) via Pillow",
+    "max_hamming_distance_threshold": 2,
+    "total_images_screened": 5824,
+    "candidate_near_duplicates_found": 0,
+    "candidate_pairs": [],
+    "policy_notice": "Candidate near-duplicates are flagged for informational review. No images are automatically removed based on perceptual similarity."
+  },
+  "patient_analysis": {
+    "total_unique_heuristic_patients_retained": 3117,
+    "unique_patients_per_split": {
+      "train": 2558,
+      "val": 687,
+      "test": 426
+    },
+    "shared_heuristic_patients_total": {
+      "train_and_val": 384,
+      "train_and_test": 155,
+      "val_and_test": 55
+    },
+    "shared_heuristic_pneumonia_patients": {
+      "train_and_val": 363,
+      "train_and_test": 155,
+      "val_and_test": 55
+    },
+    "shared_heuristic_normal_series_prefixes": {
+      "train_and_val": 21,
+      "train_and_test": 0,
+      "val_and_test": 0
+    },
+    "clinical_limitation_statement": "Patient identifiers are heuristic approximations extracted from filename prefixes. For Pneumonia images, 'person<ID>' identifies pediatric subjects. For Normal images, 'IM-<ID>' and 'NORMAL2-IM-<ID>' represent DICOM acquisition instance/series numbers, NOT verified patient identifiers. Crucially, the original publication (Kermany et al., 2018) released the official dataset with known patient overlap between its original train and test directories (e.g., person100 appears in both train and test). Furthermore, no clinical demographic or patient cross-reference tables were published. Therefore, while exact bitwise image independence is strictly verified (0 exact-hash leaks across splits), clinical patient-level independence cannot be proven from filenames alone and must be acknowledged as a benchmark limitation."
+  },
+  "elapsed_seconds": 68.25,
+  "pipeline_status": "SUCCESS"
+}

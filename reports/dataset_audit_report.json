@@ -1,0 +1,724 @@
+{
+  "audit_timestamp": "2026-10-10 18:05:25",
+  "dataset_root": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray",
+  "resolved_split_root": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray",
+  "total_files_scanned": 5856,
+  "elapsed_seconds": 11.4,
+  "split_statistics": {
+    "train": {
+      "status": "PRESENT",
+      "classes": {
+        "NORMAL": {
+          "status": "PRESENT",
+          "valid_images": 1341,
+          "bacteria": 0,
+          "virus": 0
+        },
+        "PNEUMONIA": {
+          "status": "PRESENT",
+          "valid_images": 3875,
+          "bacteria": 2530,
+          "virus": 1345
+        }
+      },
+      "total_images": 5216,
+      "bacteria_count": 2530,
+      "virus_count": 1345
+    },
+    "val": {
+      "status": "PRESENT",
+      "classes": {
+        "NORMAL": {
+          "status": "PRESENT",
+          "valid_images": 8,
+          "bacteria": 0,
+          "virus": 0
+        },
+        "PNEUMONIA": {
+          "status": "PRESENT",
+          "valid_images": 8,
+          "bacteria": 8,
+          "virus": 0
+        }
+      },
+      "total_images": 16,
+      "bacteria_count": 8,
+      "virus_count": 0
+    },
+    "test": {
+      "status": "PRESENT",
+      "classes": {
+        "NORMAL": {
+          "status": "PRESENT",
+          "valid_images": 234,
+          "bacteria": 0,
+          "virus": 0
+        },
+        "PNEUMONIA": {
+          "status": "PRESENT",
+          "valid_images": 390,
+          "bacteria": 242,
+          "virus": 148
+        }
+      },
+      "total_images": 624,
+      "bacteria_count": 242,
+      "virus_count": 148
+    }
+  },
+  "resolution_summary": {
+    "min_dimensions_wh": [
+      384,
+      127
+    ],
+    "max_dimensions_wh": [
+      2916,
+      2713
+    ],
+    "color_modes": {
+      "L": 5573,
+      "RGB": 283
+    }
+  },
+  "unreadable_corrupt_images": {
+    "count": 0,
+    "items": []
+  },
+  "duplicate_analysis": {
+    "intra_split_duplicate_groups": 30,
+    "intra_split_duplicates_by_split": {
+      "train": 24,
+      "val": 0,
+      "test": 6
+    },
+    "intra_split_duplicates": [
+      {
+        "hash": "dcc3ab0eaf19ff80af9d3d254b340da5",
+        "split": "train",
+        "class": "NORMAL",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\NORMAL\\NORMAL2-IM-0587-0001-0001.jpeg",
+            "name": "NORMAL2-IM-0587-0001-0001.jpeg",
+            "split": "train",
+            "class": "NORMAL"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\NORMAL\\NORMAL2-IM-0587-0001-0002.jpeg",
+            "name": "NORMAL2-IM-0587-0001-0002.jpeg",
+            "split": "train",
+            "class": "NORMAL"
+          }
+        ]
+      },
+      {
+        "hash": "edbf5c2810fce5b00722716ab730e577",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1159_virus_1944.jpeg",
+            "name": "person1159_virus_1944.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1159_virus_1945.jpeg",
+            "name": "person1159_virus_1945.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "b0ef364ad24cf8b19c70cf0e8debb1ee",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person124_virus_246.jpeg",
+            "name": "person124_virus_246.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person124_virus_247.jpeg",
+            "name": "person124_virus_247.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "3eaf3d1e7d169b19c280ff54c291cd0f",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1261_virus_2147.jpeg",
+            "name": "person1261_virus_2147.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1261_virus_2148.jpeg",
+            "name": "person1261_virus_2148.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "ee1a4aa1a4447f742f55464ef2483060",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1312_bacteria_3317.jpeg",
+            "name": "person1312_bacteria_3317.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1312_bacteria_3318.jpeg",
+            "name": "person1312_bacteria_3318.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "b7d8223d200f9a48dcb9d598cddae2d6",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1343_bacteria_3413.jpeg",
+            "name": "person1343_bacteria_3413.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1343_bacteria_3414.jpeg",
+            "name": "person1343_bacteria_3414.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "077fce04eafc798401239d127a84f5f0",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1349_bacteria_3436.jpeg",
+            "name": "person1349_bacteria_3436.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1349_bacteria_3437.jpeg",
+            "name": "person1349_bacteria_3437.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "de69d5b43fa9b4894d8b938352ff5650",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 3,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1372_bacteria_3501.jpeg",
+            "name": "person1372_bacteria_3501.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1372_bacteria_3502.jpeg",
+            "name": "person1372_bacteria_3502.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1372_bacteria_3503.jpeg",
+            "name": "person1372_bacteria_3503.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "4a8541c3e481489acfeb8bd6b58c6e85",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1430_bacteria_3695.jpeg",
+            "name": "person1430_bacteria_3695.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1430_bacteria_3696.jpeg",
+            "name": "person1430_bacteria_3696.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "ec767162c138e35cf6477b472bca6a24",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1481_bacteria_3862.jpeg",
+            "name": "person1481_bacteria_3862.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1481_bacteria_3863.jpeg",
+            "name": "person1481_bacteria_3863.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "b6e7fa964af9ca72fb90c64ab20b757b",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1481_bacteria_3864.jpeg",
+            "name": "person1481_bacteria_3864.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1481_bacteria_3865.jpeg",
+            "name": "person1481_bacteria_3865.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "23cd1cdafc40ad7f67e6d076ffec52ab",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1481_bacteria_3866.jpeg",
+            "name": "person1481_bacteria_3866.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1481_bacteria_3867.jpeg",
+            "name": "person1481_bacteria_3867.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "684d201b0ef1eeda6d64170a425910d9",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1496_bacteria_3909.jpeg",
+            "name": "person1496_bacteria_3909.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1496_bacteria_3910.jpeg",
+            "name": "person1496_bacteria_3910.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "061c1fac2e79c2d435a6d4c1e35894e7",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1619_bacteria_4267.jpeg",
+            "name": "person1619_bacteria_4267.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1619_bacteria_4268.jpeg",
+            "name": "person1619_bacteria_4268.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "78ff1c623db8352507e4530f7eb86e11",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1628_bacteria_4297.jpeg",
+            "name": "person1628_bacteria_4297.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person1628_bacteria_4298.jpeg",
+            "name": "person1628_bacteria_4298.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "56dea5c125ea059d9de1ce6a7676c00d",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person162_virus_321.jpeg",
+            "name": "person162_virus_321.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person162_virus_322.jpeg",
+            "name": "person162_virus_322.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "99e09ba874a343a760a4dd3bb7642099",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 3,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person258_bacteria_1207.jpeg",
+            "name": "person258_bacteria_1207.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person258_bacteria_1208.jpeg",
+            "name": "person258_bacteria_1208.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person258_bacteria_1209.jpeg",
+            "name": "person258_bacteria_1209.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "9cadd7257f9242e07fe1f974d5bac139",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person264_bacteria_1230.jpeg",
+            "name": "person264_bacteria_1230.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person264_bacteria_1231.jpeg",
+            "name": "person264_bacteria_1231.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "d9a3798fd92e1580286909da52f27506",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person266_bacteria_1237.jpeg",
+            "name": "person266_bacteria_1237.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person266_bacteria_1238.jpeg",
+            "name": "person266_bacteria_1238.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "c7a269a84528269d8f34e6bceeb4d880",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person30_bacteria_156.jpeg",
+            "name": "person30_bacteria_156.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person30_bacteria_157.jpeg",
+            "name": "person30_bacteria_157.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "23d698733d4709babc2bf0b40ea67cf4",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person357_virus_734.jpeg",
+            "name": "person357_virus_734.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person357_virus_735.jpeg",
+            "name": "person357_virus_735.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "9355430a9242aae9221a95db1f856164",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person401_virus_797.jpeg",
+            "name": "person401_virus_797.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person401_virus_798.jpeg",
+            "name": "person401_virus_798.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "6438db6b162d478c8109e020c3c61b0d",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person688_virus_1281.jpeg",
+            "name": "person688_virus_1281.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person688_virus_1282.jpeg",
+            "name": "person688_virus_1282.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "8b643949f1cb8573042b036bd097531c",
+        "split": "train",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person834_bacteria_2747.jpeg",
+            "name": "person834_bacteria_2747.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\train\\PNEUMONIA\\person834_bacteria_2748.jpeg",
+            "name": "person834_bacteria_2748.jpeg",
+            "split": "train",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "f9528b244ccd49f3d89ead90ba09c520",
+        "split": "test",
+        "class": "NORMAL",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\test\\NORMAL\\NORMAL2-IM-0095-0001.jpeg",
+            "name": "NORMAL2-IM-0095-0001.jpeg",
+            "split": "test",
+            "class": "NORMAL"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\test\\NORMAL\\NORMAL2-IM-0096-0001.jpeg",
+            "name": "NORMAL2-IM-0096-0001.jpeg",
+            "split": "test",
+            "class": "NORMAL"
+          }
+        ]
+      },
+      {
+        "hash": "f430f3359bdb6b06ebce9008f7d98b7d",
+        "split": "test",
+        "class": "NORMAL",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\test\\NORMAL\\NORMAL2-IM-0173-0001-0001.jpeg",
+            "name": "NORMAL2-IM-0173-0001-0001.jpeg",
+            "split": "test",
+            "class": "NORMAL"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\test\\NORMAL\\NORMAL2-IM-0173-0001-0002.jpeg",
+            "name": "NORMAL2-IM-0173-0001-0002.jpeg",
+            "split": "test",
+            "class": "NORMAL"
+          }
+        ]
+      },
+      {
+        "hash": "05c43c853e8209bf0423f73a6f0a8c58",
+        "split": "test",
+        "class": "NORMAL",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\test\\NORMAL\\NORMAL2-IM-0246-0001-0001.jpeg",
+            "name": "NORMAL2-IM-0246-0001-0001.jpeg",
+            "split": "test",
+            "class": "NORMAL"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\test\\NORMAL\\NORMAL2-IM-0246-0001-0002.jpeg",
+            "name": "NORMAL2-IM-0246-0001-0002.jpeg",
+            "split": "test",
+            "class": "NORMAL"
+          }
+        ]
+      },
+      {
+        "hash": "62f9117f9c56340e6d34a93de32f320c",
+        "split": "test",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\test\\PNEUMONIA\\person128_bacteria_606.jpeg",
+            "name": "person128_bacteria_606.jpeg",
+            "split": "test",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\test\\PNEUMONIA\\person128_bacteria_607.jpeg",
+            "name": "person128_bacteria_607.jpeg",
+            "split": "test",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "fe703b7a0f66f29bfb5dc8a003ec3973",
+        "split": "test",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\test\\PNEUMONIA\\person134_bacteria_643.jpeg",
+            "name": "person134_bacteria_643.jpeg",
+            "split": "test",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\test\\PNEUMONIA\\person134_bacteria_644.jpeg",
+            "name": "person134_bacteria_644.jpeg",
+            "split": "test",
+            "class": "PNEUMONIA"
+          }
+        ]
+      },
+      {
+        "hash": "adf8b53df78fea92adf7ff3e80fb6810",
+        "split": "test",
+        "class": "PNEUMONIA",
+        "count": 2,
+        "occurrences": [
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\test\\PNEUMONIA\\person1661_virus_2872.jpeg",
+            "name": "person1661_virus_2872.jpeg",
+            "split": "test",
+            "class": "PNEUMONIA"
+          },
+          {
+            "path": "E:\\Project1\\gpu-network\\data\\chest img data\\chest_xray\\test\\PNEUMONIA\\person1661_virus_2873.jpeg",
+            "name": "person1661_virus_2873.jpeg",
+            "split": "test",
+            "class": "PNEUMONIA"
+          }
+        ]
+      }
+    ],
+    "cross_class_conflict_groups": 0,
+    "cross_class_conflicts": [],
+    "cross_split_leakage_groups": 0,
+    "cross_split_leakages": []
+  },
+  "filesystem_artifacts": {
+    "macosx_dir_found": true,
+    "ds_store_count": 8,
+    "apple_double_files_count": 5871,
+    "details": [
+      "Detected '__MACOSX' metadata folder. Ensure standard PyTorch loaders point directly to clean split folders.",
+      "Detected 8 '.DS_Store' file(s) across folders.",
+      "Detected 5871 AppleDouble ('._*') metadata files."
+    ]
+  },
+  "overall_status": "PASS"
+}

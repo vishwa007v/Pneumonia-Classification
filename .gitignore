@@ -1,0 +1,97 @@
+# =====================================
+# PYTHON CACHE AND TEMPORARY FILES
+# =====================================
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# =====================================
+# VIRTUAL ENVIRONMENTS
+# =====================================
+venv/
+.venv/
+env/
+ENV/
+
+# =====================================
+# JUPYTER NOTEBOOK TEMPORARY FILES
+# =====================================
+.ipynb_checkpoints/
+
+# =====================================
+# DATASETS AND GENERATED DATA
+# =====================================
+data/
+datasets/
+prepared/
+raw_data/
+processed_data/
+
+# =====================================
+# MODEL WEIGHTS AND CHECKPOINTS
+# =====================================
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.onnx
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+
+checkpoints/
+weights/
+model_weights/
+
+# =====================================
+# KAGGLE FILES AND LARGE EXPORTS
+# =====================================
+kaggle.json
+kaggle_outputs/
+kaggle_downloads/
+
+
+*.tar
+*.tar.gz
+*.7z
+
+# =====================================
+# GENERATED EXPERIMENT OUTPUTS
+# =====================================
+runs/
+wandb/
+mlruns/
+lightning_logs/
+outputs/
+logs/
+tensorboard/
+
+# =====================================
+# SECRETS AND ENVIRONMENT VARIABLES
+# =====================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# =====================================
+# OPERATING SYSTEM FILES
+# =====================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =====================================
+# EDITOR FILES
+# =====================================
+.vscode/*
+!.vscode/extensions.json
+.idea/

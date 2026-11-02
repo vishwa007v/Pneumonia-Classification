@@ -1,0 +1,66 @@
+{
+  "reproducibility": {
+    "random_seed": 42,
+    "deterministic_cudnn": true
+  },
+  "hardware": {
+    "num_workers_windows": 0,
+    "num_workers_linux": 2,
+    "pin_memory_auto": true
+  },
+  "dataset": {
+    "prepared_root_local": "data/prepared",
+    "prepared_root_kaggle": "/kaggle/working/prepared",
+    "image_size": 224,
+    "classes": ["NORMAL", "PNEUMONIA"]
+  },
+  "models": {
+    "custom_cnn": {
+      "architecture": "custom_cnn",
+      "in_channels": 3,
+      "num_classes": 2,
+      "dropout_rate": 0.4,
+      "learning_rate": 0.0005,
+      "weight_decay": 0.0001,
+      "batch_size": 32,
+      "epochs": 15,
+      "optimizer": "adamw",
+      "lr_scheduler": "plateau",
+      "monitor_metric": "val_loss",
+      "monitor_mode": "min"
+    },
+    "resnet18": {
+      "architecture": "resnet18",
+      "num_classes": 2,
+      "pretrained": true,
+      "freeze_backbone": false,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.0001,
+      "batch_size": 32,
+      "epochs": 15,
+      "optimizer": "adamw",
+      "lr_scheduler": "plateau",
+      "monitor_metric": "val_loss",
+      "monitor_mode": "min"
+    },
+    "cxformer_small": {
+      "architecture": "cxformer_small",
+      "model_dir": "CXformer_small_files",
+      "image_size": 518,
+      "num_classes": 2,
+      "dropout_rate": 0.3,
+      "freeze_backbone": true,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "batch_size": 16,
+      "epochs": 15,
+      "optimizer": "adamw",
+      "lr_scheduler": "plateau",
+      "monitor_metric": "val_loss",
+      "monitor_mode": "min"
+    }
+  },
+  "checkpoints": {
+    "output_dir": "checkpoints"
+  }
+}
